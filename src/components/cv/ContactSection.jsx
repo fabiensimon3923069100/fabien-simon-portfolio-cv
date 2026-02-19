@@ -1,154 +1,96 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, MapPin, Phone } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Mail, MapPin, Phone, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+
+const contacts = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "fabien.simon39@gmail.com",
+    href: "mailto:fabien.simon39@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Téléphone",
+    value: "06 45 18 90 66",
+    href: "tel:+33645189066",
+  },
+  {
+    icon: MapPin,
+    label: "Localisation",
+    value: "Lyon / Genève · Full Remote",
+    href: null,
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    value: "fabien-simon-124215138",
+    href: "https://www.linkedin.com/in/fabien-simon-124215138/",
+  },
+];
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({ name: "", email: "", company: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const subject = encodeURIComponent(`Contact CV Web – ${formData.name} (${formData.company})`);
-    const body = encodeURIComponent(`Nom: ${formData.name}\nEmail: ${formData.email}\nEntreprise: ${formData.company}\n\nMessage:\n${formData.message}`);
-    window.open(`mailto:fabien.simon39@gmail.com?subject=${subject}&body=${body}`, "_blank");
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-  };
-
   return (
     <section id="contact" className="py-24 md:py-32 bg-white">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-14"
         >
           <span className="text-sm font-semibold tracking-widest uppercase text-blue-500 mb-4 block">Contact</span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
             Discutons de votre prochain <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">projet digital</span>
           </h2>
           <p className="text-slate-500 max-w-lg mx-auto">
-            Disponible pour des missions freelance en France et en Suisse.
+            Disponible pour des missions freelance en France, en Suisse et en full remote.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-5 gap-12">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="md:col-span-2 space-y-6"
-          >
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                <Mail className="w-5 h-5 text-blue-500" />
-              </div>
-              <div>
-                <p className="font-medium text-slate-900 text-sm">Email</p>
-                <a href="mailto:fabien.simon39@gmail.com" className="text-slate-500 text-sm hover:text-blue-500 transition-colors">
-                  fabien.simon39@gmail.com
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                <Phone className="w-5 h-5 text-blue-500" />
-              </div>
-              <div>
-                <p className="font-medium text-slate-900 text-sm">Téléphone</p>
-                <a href="tel:+33645189066" className="text-slate-500 text-sm hover:text-blue-500 transition-colors">
-                  06 45 18 90 66
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-5 h-5 text-blue-500" />
-              </div>
-              <div>
-                <p className="font-medium text-slate-900 text-sm">Localisation</p>
-                <p className="text-slate-500 text-sm">Lyon / Genève</p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.form
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            onSubmit={handleSubmit}
-            className="md:col-span-3 space-y-5"
-          >
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="text-slate-700 text-sm">Nom</Label>
-                <Input
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Votre nom"
-                  className="border-slate-200 focus:border-blue-500 rounded-lg"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-slate-700 text-sm">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="votre@email.com"
-                  className="border-slate-200 focus:border-blue-500 rounded-lg"
-                  required
-                />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="company" className="text-slate-700 text-sm">Entreprise</Label>
-              <Input
-                id="company"
-                value={formData.company}
-                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                placeholder="Votre entreprise"
-                className="border-slate-200 focus:border-blue-500 rounded-lg"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="message" className="text-slate-700 text-sm">Message</Label>
-              <Textarea
-                id="message"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                placeholder="Décrivez votre projet..."
-                rows={5}
-                className="border-slate-200 focus:border-blue-500 rounded-lg resize-none"
-                required
-              />
-            </div>
-            <Button
-              type="submit"
-              className="w-full bg-gradient-to-r from-blue-500 to-violet-600 hover:from-blue-600 hover:to-violet-700 text-white py-6 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300 hover:scale-[1.02]"
+        <div className="grid sm:grid-cols-2 gap-5 mb-10">
+          {contacts.map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="flex items-center gap-4 bg-slate-50 rounded-xl p-5 border border-slate-100 hover:shadow-md transition-all duration-300"
             >
-              {submitted ? (
-                "Client email ouvert !"
-              ) : (
-                <>
-                  <Send className="w-5 h-5 mr-2" />
-                  Envoyer le message
-                </>
-              )}
-            </Button>
-          </motion.form>
+              <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-blue-500/10 to-violet-500/10 flex items-center justify-center flex-shrink-0">
+                <item.icon className="w-5 h-5 text-blue-500" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">{item.label}</p>
+                {item.href ? (
+                  <a href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="text-slate-700 font-medium hover:text-blue-500 transition-colors">
+                    {item.value}
+                  </a>
+                ) : (
+                  <p className="text-slate-700 font-medium">{item.value}</p>
+                )}
+              </div>
+            </motion.div>
+          ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="text-center"
+        >
+          <a href="mailto:fabien.simon39@gmail.com">
+            <Button className="bg-gradient-to-r from-blue-500 to-violet-600 hover:from-blue-600 hover:to-violet-700 text-white px-10 py-6 text-base rounded-full shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300 hover:scale-105">
+              <Mail className="w-5 h-5 mr-2" />
+              Envoyer un email
+            </Button>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
