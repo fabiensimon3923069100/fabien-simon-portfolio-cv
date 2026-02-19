@@ -56,23 +56,18 @@ export default function TechStackSection() {
               className="bg-slate-50 rounded-2xl p-6 border border-slate-100"
             >
               <h3 className="text-sm font-semibold tracking-widest uppercase text-slate-400 mb-5">{cat.label}</h3>
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-2">
                 {cat.techs.map((tech, tIdx) => (
-                  <div key={tIdx}>
-                    <div className="flex justify-between mb-1.5">
-                      <span className="text-sm font-medium text-slate-700">{tech.name}</span>
-                      <span className="text-xs text-slate-400">{tech.level}%</span>
-                    </div>
-                    <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${tech.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.3 + tIdx * 0.1, ease: "easeOut" }}
-                        className="h-full rounded-full bg-gradient-to-r from-blue-500 to-violet-500"
-                      />
-                    </div>
-                  </div>
+                  <motion.span
+                    key={tIdx}
+                    initial={{ opacity: 0, scale: 0.85 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: 0.1 + tIdx * 0.05 }}
+                    className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:border-blue-400 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200"
+                  >
+                    {tech}
+                  </motion.span>
                 ))}
               </div>
             </motion.div>
