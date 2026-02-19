@@ -8,6 +8,7 @@ import ManagementSection from "@/components/cv/ManagementSection";
 import EducationSection from "@/components/cv/EducationSection";
 import ValueProposition from "@/components/cv/ValueProposition";
 import ContactSection from "@/components/cv/ContactSection";
+import LifeSection from "@/components/cv/LifeSection";
 
 export default function Home() {
   return (
