@@ -58,7 +58,7 @@ export default function HeroSection() {
         >
           <div className="flex items-center justify-center gap-2 mb-6">
             <MapPin className="w-4 h-4 text-blue-400" />
-            <span className="text-sm text-slate-400 tracking-widest uppercase">Lyon / Genève</span>
+            <span className="text-sm text-slate-400 tracking-widest uppercase">Lyon / Genève · Full Remote</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight mb-4">
