@@ -102,7 +102,7 @@ export default function HeroSection() {
               Me contacter
             </Button>
           </a>
-          <a href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_695bd16e38ac7da448e75846/66b5f1687_CvFabienSimon2026.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997173f88cd16ae6e67774d/4717c10d1_CvFabienSimon20261.pdf" target="_blank" rel="noopener noreferrer">
             <Button className="bg-gradient-to-r from-blue-500 to-violet-600 hover:from-blue-600 hover:to-violet-700 text-white px-8 py-6 text-base rounded-full shadow-lg shadow-blue-500/20 transition-all duration-300 hover:shadow-blue-500/40 hover:scale-105">
               <FileDown className="w-5 h-5 mr-2" />
               Télécharger CV PDF
