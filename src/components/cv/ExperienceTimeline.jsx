@@ -44,40 +44,6 @@ const experiences = [
     ],
   },
   {
-    period: "Sept. 2017 – Août 2020",
-    title: "Alternance – Assistant Chef de Projet IT / Dev Web · SNCF",
-    missions: [
-      {
-        name: "Référentiel produits TER",
-        subtitle: "DSI DG TER · Qualité des données – Ouverture à la concurrence",
-        tasks: [
-          "Analyse & rédaction cahier des charges",
-          "Planning Gantt / PERT, estimation charges",
-          "Gestion des risques & KPI",
-          "Animation COPROJ",
-          "Développement Symfony & déploiement Azure",
-        ],
-        stack: ["Symfony", "PHP", "PostgreSQL", "Azure", "Doctrine"],
-      },
-    ],
-  },
-  {
-    period: "Nov. 2016 – Mai 2017",
-    title: "Stage Développeur Web – KhmerDev (Cambodge)",
-    missions: [
-      {
-        name: "Lycée Français René Descartes",
-        subtitle: "Phnom Penh, Cambodge",
-        tasks: [
-          "Refonte site Wordpress",
-          "Développement back-office RH en PHP",
-          "Documentation fonctionnelle & utilisateur",
-        ],
-        stack: ["Wordpress", "PHP", "HTML", "CSS"],
-      },
-    ],
-  },
-  {
     period: "2021 – Aujourd'hui",
     title: "Formateur IT – IT-AKADEMY",
     missions: [
