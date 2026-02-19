@@ -39,7 +39,7 @@ export default function PositioningSection() {
             Un profil <span className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">hybride</span> & stratégique
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">
-            Combinant cadrage stratégique RNCP niveau 7, architecture technique,
+            Combinant cadrage stratégique, architecture technique,
             automatisation IA et vision business entrepreneuriale.
           </p>
         </motion.div>
