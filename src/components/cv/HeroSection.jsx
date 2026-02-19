@@ -96,7 +96,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="mailto:fabien.simon39@gmail.com">
+          <a href="#contact">
             <Button className="bg-gradient-to-r from-blue-500 to-violet-600 hover:from-blue-600 hover:to-violet-700 text-white px-8 py-6 text-base rounded-full shadow-lg shadow-blue-500/20 transition-all duration-300 hover:shadow-blue-500/40 hover:scale-105">
               <Mail className="w-5 h-5 mr-2" />
               Me contacter
