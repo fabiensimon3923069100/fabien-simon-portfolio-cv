@@ -11,6 +11,7 @@ import ContactSection from "@/components/cv/ContactSection";
 import LifeSection from "@/components/cv/LifeSection";
 
 export default function Home() {
+  React.useEffect(() => { document.title = "Fabien SIMON"; }, []);
   return (
     <div className="min-h-screen bg-white">
       <HeroSection />
