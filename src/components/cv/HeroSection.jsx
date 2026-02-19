@@ -114,6 +114,12 @@ export default function HeroSection() {
               LinkedIn
             </Button>
           </a>
+          <a href="https://notebooklm.google.com/notebook/357b8353-5ec6-411a-9bbc-bd59edc0c4e6" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-gradient-to-r from-blue-500 to-violet-600 hover:from-blue-600 hover:to-violet-700 text-white px-8 py-6 text-base rounded-full shadow-lg shadow-blue-500/20 transition-all duration-300 hover:shadow-blue-500/40 hover:scale-105">
+              <BookOpen className="w-5 h-5 mr-2" />
+              Mon Notebook
+            </Button>
+          </a>
         </motion.div>
 
         <motion.div
