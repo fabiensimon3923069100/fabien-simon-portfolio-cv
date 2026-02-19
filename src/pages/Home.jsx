@@ -21,6 +21,7 @@ export default function Home() {
       <ManagementSection />
       <EducationSection />
       <ValueProposition />
+      <LifeSection />
       <ContactSection />
 
       {/* Footer */}
