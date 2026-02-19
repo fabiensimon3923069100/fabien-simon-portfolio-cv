@@ -31,6 +31,16 @@ const experiences = [
         stack: ["Symfony", "PHP", "PostgreSQL", "API Platform"],
       },
       {
+        name: "PADA1 – Plateforme de mise en relation freelances/étudiants",
+        subtitle: "Startup · Mission freelance",
+        tasks: [
+          "Réunions clients & cadrage du besoin",
+          "Recette fonctionnelle",
+          "Développement Webflow & Xano",
+        ],
+        stack: ["Webflow", "Xano", "No-code"],
+      },
+      {
         name: "Création de sites web clients",
         subtitle: "2020 – Aujourd'hui · Missions multiples",
         tasks: [
