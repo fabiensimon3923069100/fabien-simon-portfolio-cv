@@ -26,6 +26,8 @@ export default function Home() {
       <LifeSection />
       <ContactSection />
 
+      <ChatBot />
+
       {/* Footer */}
       <footer className="bg-slate-950 py-8 border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-6 text-center">
