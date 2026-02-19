@@ -9,6 +9,7 @@ import EducationSection from "@/components/cv/EducationSection";
 import ValueProposition from "@/components/cv/ValueProposition";
 import ContactSection from "@/components/cv/ContactSection";
 import LifeSection from "@/components/cv/LifeSection";
+import ChatBot from "@/components/cv/ChatBot";
 
 export default function Home() {
   React.useEffect(() => { document.title = "Fabien SIMON"; }, []);
