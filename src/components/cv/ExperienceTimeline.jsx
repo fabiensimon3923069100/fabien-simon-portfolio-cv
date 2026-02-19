@@ -21,16 +21,6 @@ const experiences = [
         stack: ["Symfony", "Doctrine", "API", "Docker", "Gitlab", "Bootstrap"],
       },
       {
-        name: "ERP gestion de prospects",
-        subtitle: "Secteur isolation · Janvier 2021",
-        tasks: [
-          "Cadrage besoin et MCD",
-          "Développement Symfony",
-          "Recette MOE et livraison",
-        ],
-        stack: ["Symfony", "PHP", "PostgreSQL", "API Platform"],
-      },
-      {
         name: "PADA1 – Plateforme de mise en relation freelances/étudiants",
         subtitle: "Avr. – Mai 2024 · Startup · Mission freelance",
         tasks: [
@@ -39,6 +29,16 @@ const experiences = [
           "Développement Webflow & Xano",
         ],
         stack: ["Webflow", "Xano", "No-code"],
+      },
+      {
+        name: "ERP gestion de prospects",
+        subtitle: "Secteur isolation · Janvier 2021",
+        tasks: [
+          "Cadrage besoin et MCD",
+          "Développement Symfony",
+          "Recette MOE et livraison",
+        ],
+        stack: ["Symfony", "PHP", "PostgreSQL", "API Platform"],
       },
       {
         name: "Création de sites web clients",
