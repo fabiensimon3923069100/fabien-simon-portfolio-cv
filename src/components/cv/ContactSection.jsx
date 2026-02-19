@@ -7,14 +7,14 @@ const contacts = [
   {
     icon: Mail,
     label: "Email",
-    value: "fabien.simon39@gmail.com",
-    href: "mailto:fabien.simon39@gmail.com",
+    value: "contact@fabien-simon-agence-digitale.fr",
+    href: "mailto:contact@fabien-simon-agence-digitale.fr",
   },
   {
     icon: Phone,
     label: "Téléphone",
-    value: "06 45 18 90 66",
-    href: "tel:+33645189066",
+    value: "06 14 16 25 15",
+    href: "tel:+33614162515",
   },
   {
     icon: MapPin,
