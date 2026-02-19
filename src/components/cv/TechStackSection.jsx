@@ -4,27 +4,31 @@ import { motion } from "framer-motion";
 const categories = [
   {
     label: "Backend",
-    techs: ["PHP", "Symfony", "Laravel", "API REST"],
+    techs: ["PHP", "Symfony", "Laravel", "Doctrine", "API REST", "API Platform", "POO", "Architecture MVC"],
   },
   {
     label: "Frontend",
-    techs: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Tailwind"],
+    techs: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Tailwind", "Twig"],
   },
   {
     label: "Base de données",
-    techs: ["MySQL", "PostgreSQL"],
+    techs: ["MySQL", "PostgreSQL", "SQL", "Ubuntu"],
   },
   {
     label: "Cloud & DevOps",
-    techs: ["Azure", "Docker", "Git / Gitlab", "CI/CD", "Linux", "Apache", "Vercel"],
+    techs: ["Azure", "Docker", "Git", "Gitlab", "CI/CD", "Linux", "Apache", "Vercel", "PlanetHoster", "OVH"],
   },
   {
     label: "Outils",
-    techs: ["Postman", "VSCode", "PhpStorm", "Base44", "n8n"],
+    techs: ["Postman", "VSCode", "PhpStorm", "Base44", "n8n", "Office 365", "Slack", "Google Drive", "Google Cloud", "Google Ads", "Google My Business"],
+  },
+  {
+    label: "CMS & E-commerce",
+    techs: ["Wordpress", "WooCommerce", "Booknetic", "Stripe"],
   },
   {
     label: "Méthodologie",
-    techs: ["Scrum", "Méthode V", "UML / MERISE", "KPI / Risques"],
+    techs: ["Scrum", "Méthode V", "UML / MERISE", "KPI / Risques", "Planning Poker", "Algorithme"],
   },
 ];
 
