@@ -32,7 +32,7 @@ const experiences = [
       },
       {
         name: "PADA1 – Plateforme de mise en relation freelances/étudiants",
-        subtitle: "Startup · Mission freelance",
+        subtitle: "Avr. – Mai 2024 · Startup · Mission freelance",
         tasks: [
           "Réunions clients & cadrage du besoin",
           "Recette fonctionnelle",
