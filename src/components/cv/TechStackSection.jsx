@@ -4,46 +4,27 @@ import { motion } from "framer-motion";
 const categories = [
   {
     label: "Backend",
-    techs: [
-      { name: "PHP", level: 95 },
-      { name: "Symfony", level: 90 },
-      { name: "Laravel", level: 75 },
-      { name: "API REST", level: 85 },
-    ],
+    techs: ["PHP", "Symfony", "Laravel", "API REST"],
   },
   {
     label: "Frontend",
-    techs: [
-      { name: "HTML5", level: 95 },
-      { name: "CSS3", level: 90 },
-      { name: "JavaScript", level: 80 },
-      { name: "Bootstrap", level: 90 },
-    ],
+    techs: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Tailwind"],
   },
   {
     label: "Base de données",
-    techs: [
-      { name: "MySQL", level: 85 },
-      { name: "PostgreSQL", level: 85 },
-    ],
+    techs: ["MySQL", "PostgreSQL"],
   },
   {
     label: "Cloud & DevOps",
-    techs: [
-      { name: "Azure", level: 75 },
-      { name: "Docker", level: 70 },
-      { name: "Git / Gitlab", level: 90 },
-      { name: "CI/CD", level: 70 },
-    ],
+    techs: ["Azure", "Docker", "Git / Gitlab", "CI/CD", "Linux", "Apache", "Vercel"],
+  },
+  {
+    label: "Outils",
+    techs: ["Postman", "VSCode", "PhpStorm", "Base44", "n8n"],
   },
   {
     label: "Méthodologie",
-    techs: [
-      { name: "Scrum", level: 90 },
-      { name: "Méthode V", level: 85 },
-      { name: "UML / MERISE", level: 80 },
-      { name: "KPI / Risques", level: 85 },
-    ],
+    techs: ["Scrum", "Méthode V", "UML / MERISE", "KPI / Risques"],
   },
 ];
 
