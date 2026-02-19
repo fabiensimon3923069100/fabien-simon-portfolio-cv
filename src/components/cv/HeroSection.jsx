@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Mail, FileDown, Linkedin, MapPin, Phone, ChevronDown } from "lucide-react";
+import { Mail, FileDown, Linkedin, MapPin, Phone, ChevronDown, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const titles = [
