@@ -16,11 +16,11 @@ const categories = [
   },
   {
     label: "Cloud & DevOps",
-    techs: ["Azure", "Docker", "Git", "Gitlab", "CI/CD", "Linux", "Apache", "Vercel", "PlanetHoster", "OVH"],
+    techs: ["Azure", "Docker", "Git", "Gitlab", "GitHub", "CI/CD", "Linux", "Apache", "Vercel", "PlanetHoster", "OVH"],
   },
   {
     label: "Outils",
-    techs: ["Postman", "VSCode", "PhpStorm", "Base44", "n8n", "Office 365", "Slack", "Google Drive", "Google Cloud", "Google Ads", "Google My Business"],
+    techs: ["Postman", "VSCode", "PhpStorm", "Base44", "n8n", "Office 365", "Slack", "Google Drive", "Google Cloud", "Google Ads", "Google My Business", "ChatGPT", "Codex"],
   },
   {
     label: "CMS & E-commerce",
